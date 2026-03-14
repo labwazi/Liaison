@@ -1,530 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liaison Dating App – Find Love in Mauritius & Beyond</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
-    .playfair {
-      font-family: 'Playfair Display', serif;
-    }
-    .gradient-bg {
-      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
-    }
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card-hover:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    }
-    .heart-pulse {
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Port Chambly Investment Property</title>
+
+<meta name="description" content="Port Chambly townhouse for sale Rs 7 million Mauritius. High ROI rental investment near Port Louis.">
+<meta name="keywords" content="Port Chambly property, Mauritius investment property, Port Louis rental property, townhouse Mauritius, Port Chambly duplex">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:Poppins;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:linear-gradient(120deg,#0a4d68,#088395);
+color:white;
+padding:70px;
+text-align:center;
+animation:fadein 2s;
+}
+
+h1{
+font-size:40px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.section{
+margin-bottom:60px;
+animation:slideup 1s;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.pricebox{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.langswitch{
+position:absolute;
+top:20px;
+right:20px;
+}
+
+button{
+padding:10px 15px;
+border:none;
+background:#fff;
+margin:5px;
+cursor:pointer;
+}
+
+iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:10px;
+}
+
+@keyframes fadein{
+from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes slideup{
+from{transform:translateY(40px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
+
+</style>
+
+<script>
+
+function setLang(lang){
+
+document.querySelectorAll("[data-en]").forEach(el=>{
+el.innerText = el.getAttribute("data-"+lang)
+})
+
+}
+
+</script>
+
 </head>
-<body class="bg-gradient-to-b from-pink-50 to-purple-50 text-gray-800">
 
-  <!-- Header with Navigation -->
-  <header class="gradient-bg text-white shadow-xl sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="flex items-center space-x-3 mb-4 md:mb-0">
-          <div class="heart-pulse text-3xl">💖</div>
-          <div>
-            <h1 class="text-3xl font-bold playfair">Liaison</h1>
-            <p class="text-sm opacity-90">Dating App for Mauritius & International</p>
-          </div>
-        </div>
-        
-        <nav class="flex flex-wrap justify-center gap-4 md:gap-8">
-          <a href="#register" class="hover:text-pink-200 font-medium">Register</a>
-          <a href="#explore" class="hover:text-pink-200 font-medium">Explore</a>
-          <a href="#features" class="hover:text-pink-200 font-medium">Features</a>
-          <a href="#sponsors" class="hover:text-pink-200 font-medium">Sponsors</a>
-          <a href="https://wa.me/23059237053" target="_blank" class="bg-white text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-pink-50 transition">
-            <i class="fab fa-whatsapp mr-2"></i>Contact
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>
+<body>
 
-  <!-- Hero Section -->
-  <section class="container mx-auto px-4 py-12 md:py-20">
-    <div class="flex flex-col lg:flex-row items-center">
-      <div class="lg:w-1/2 mb-12 lg:mb-0">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 playfair">
-          Find Your Perfect <span class="text-pink-600">Match</span> in Mauritius
-        </h2>
-        <p class="text-lg text-gray-600 mb-8">
-          Join thousands of singles from Mauritius and around the world. Whether you're looking for friendship, romance, or a lifelong partner, Liaison connects you with compatible matches.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#register" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full text-lg font-semibold text-center transition duration-300">
-            <i class="fas fa-user-plus mr-2"></i> Join Now
-          </a>
-          <a href="#explore" class="bg-white hover:bg-gray-100 text-pink-600 border border-pink-600 px-8 py-4 rounded-full text-lg font-semibold text-center transition duration-300">
-            <i class="fas fa-search mr-2"></i> Explore Profiles
-          </a>
-        </div>
-        
-        <div class="mt-12 flex items-center space-x-6">
-          <div class="flex -space-x-4">
-            <img src="https://images.unsplash.com/photo-1494790108755-2616c113a1c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white" alt="User">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white" alt="User">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white" alt="User">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-2 border-white" alt="User">
-          </div>
-          <div>
-            <p class="font-bold text-lg">10,000+ Members</p>
-            <p class="text-gray-600">And growing every day!</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="lg:w-1/2 flex justify-center">
-        <div class="relative">
-          <div class="w-80 h-80 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full"></div>
-          <img src="https://images.unsplash.com/photo-1519281682544-5f37c4b14c47?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="absolute top-0 w-80 h-80 rounded-full object-cover shadow-2xl" alt="Happy couple">
-        </div>
-      </div>
-    </div>
-  </section>
+<header>
 
-  <!-- Registration & Payment -->
-  <section id="register" class="container mx-auto px-4 py-12">
-    <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-2 playfair text-center">Join Our Community</h2>
-      <p class="text-center text-gray-600 mb-8">Select your region and complete registration</p>
-      
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Mauritius Registration -->
-        <div class="border border-pink-200 rounded-2xl p-6 hover:border-pink-400 transition duration-300">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
-              <span class="text-2xl">🇲🇺</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold">Mauritius</h3>
-              <p class="text-pink-600 font-semibold">Rs 200</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-6">Register with local payment options. Profile will be reviewed within 24 hours.</p>
-          <a href="https://wa.me/23059237053" target="_blank" class="block bg-green-500 hover:bg-green-600 text-white text-center py-3 rounded-xl font-semibold transition duration-300">
-            <i class="fab fa-whatsapp mr-2"></i> Pay & Register via WhatsApp
-          </a>
-        </div>
-        
-        <!-- International Registration -->
-        <div class="border border-purple-200 rounded-2xl p-6 hover:border-purple-400 transition duration-300">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-              <span class="text-2xl">🌍</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold">International</h3>
-              <p class="text-purple-600 font-semibold">$10 USD</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-6">Join from anywhere in the world. Multiple payment options available.</p>
-          <div class="grid grid-cols-2 gap-3">
-            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-xl font-semibold transition duration-300">
-              <i class="fab fa-paypal mr-2"></i> PayPal
-            </a>
-            <a href="#" class="bg-black hover:bg-gray-800 text-white text-center py-3 rounded-xl font-semibold transition duration-300">
-              <i class="fab fa-cc-stripe mr-2"></i> Stripe
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-8 text-center text-gray-500 text-sm">
-        <p><i class="fas fa-shield-alt mr-2"></i> Secure payment • 7-day refund policy • Verified profiles</p>
-      </div>
-    </div>
-  </section>
+<div class="langswitch">
+<button onclick="setLang('en')">English</button>
+<button onclick="setLang('fr')">Français</button>
+</div>
 
-  <!-- Features -->
-  <section id="features" class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-12 text-center playfair">Why Choose Liaison</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
-          <i class="fas fa-user-check text-3xl text-pink-600"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-4">Verified Profiles</h3>
-        <p class="text-gray-600">All profiles are manually reviewed to ensure authenticity and safety for our community.</p>
-      </div>
-      
-      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-          <i class="fas fa-filter text-3xl text-purple-600"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-4">Smart Filters</h3>
-        <p class="text-gray-600">Find your perfect match with advanced filters for age, interests, lifestyle, and more.</p>
-      </div>
-      
-      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-          <i class="fas fa-globe-americas text-3xl text-blue-600"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-4">Local & Global</h3>
-        <p class="text-gray-600">Connect with people in Mauritius or expand your search internationally.</p>
-      </div>
-    </div>
-  </section>
+<h1 data-en="Port Chambly Investment Opportunity"
+data-fr="Opportunité d’Investissement à Port Chambly">
+Port Chambly Investment Opportunity
+</h1>
 
-  <!-- Filters -->
-  <section class="container mx-auto px-4 py-12">
-    <div class="bg-white rounded-3xl shadow-xl p-8">
-      <h2 class="text-3xl font-bold mb-6 playfair text-center">Find Your Perfect Match</h2>
-      <p class="text-center text-gray-600 mb-8">Use our advanced filters to narrow down your search</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Age Range</label>
-          <select class="w-full p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <option>Any Age</option>
-            <option>18 – 25</option>
-            <option>26 – 35</option>
-            <option>36 – 45</option>
-            <option>46 – 55</option>
-            <option>56+</option>
-          </select>
-        </div>
-        
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Gender</label>
-          <select class="w-full p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <option>Any Gender</option>
-            <option>Male</option>
-            <option>Female</option>
-          </select>
-        </div>
-        
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Religion</label>
-          <select class="w-full p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <option>Any Religion</option>
-            <option>Christian</option>
-            <option>Hindu</option>
-            <option>Muslim</option>
-            <option>Buddhist</option>
-            <option>Other</option>
-          </select>
-        </div>
-        
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Location</label>
-          <select class="w-full p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <option>Any Location</option>
-            <option>Mauritius</option>
-            <option>International</option>
-            <option>Port Louis</option>
-            <option>Curepipe</option>
-            <option>Quatre Bornes</option>
-          </select>
-        </div>
-      </div>
-      
-      <div class="flex justify-center">
-        <button class="gradient-bg hover:opacity-90 text-white px-8 py-3 rounded-full font-semibold text-lg transition duration-300">
-          <i class="fas fa-search mr-2"></i> Find Matches
-        </button>
-      </div>
-    </div>
-  </section>
+<p data-en="2 Bedroom Mediterranean Townhouse – Strategic ROI Property"
+data-fr="Maison de Ville Méditerranéenne 2 Chambres – Investissement à Haut Rendement">
+</p>
 
-  <!-- Candidate Cards -->
-  <section id="explore" class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-2 playfair text-center">Featured Profiles</h2>
-    <p class="text-center text-gray-600 mb-12">Meet some of our amazing members</p>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      
-      <!-- Profile Card 1 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-        <div class="relative">
-          <img src="images/iconn.jpg">
-          <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            <i class="fas fa-check-circle mr-1"></i> Verified
-          </div>
-        </div>
-        <div class="p-5">
-          <div class="flex justify-between items-start mb-3">
-            <div>
-              <h3 class="text-xl font-bold">Garen Chetty, 29</h3>
-              <p class="text-gray-500">Grand Baie, Mauritius</p>
-            </div>
-            <div class="text-pink-500">
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">owner of le Capitaine restaurant in grand baie,creator of lionfuel. Looking for a genuine connection.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Training</span>
-            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Travel</span>
-            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Calm</span>
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-            <a href="https://wa.me/23059237053" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg font-medium transition">
-              <i class="fab fa-whatsapp mr-1"></i> Chat
-            </a>
-            <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition">
-              <i class="fas fa-heart mr-1"></i> Match
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Profile Card 2 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Profile">
-          <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            <i class="fas fa-check-circle mr-1"></i> Verified
-          </div>
-        </div>
-        <div class="p-5">
-          <div class="flex justify-between items-start mb-3">
-            <div>
-              <h3 class="text-xl font-bold">Alex, 32</h3>
-              <p class="text-gray-500">Curepipe, Mauritius</p>
-            </div>
-            <div class="text-pink-500">
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Engineer who enjoys hiking, photography, and trying new restaurants. Seeking a serious relationship.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hiking</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Photography</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Foodie</span>
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-            <a href="https://wa.me/23052595505" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg font-medium transition">
-              <i class="fab fa-whatsapp mr-1"></i> Chat
-            </a>
-            <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition">
-              <i class="fas fa-heart mr-1"></i> Match
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Profile Card 3 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Profile">
-          <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            <i class="fas fa-check-circle mr-1"></i> Verified
-          </div>
-        </div>
-        <div class="p-5">
-          <div class="flex justify-between items-start mb-3">
-            <div>
-              <h3 class="text-xl font-bold">Priya, 26</h3>
-              <p class="text-gray-500">Quatre Bornes, Mauritius</p>
-            </div>
-            <div class="text-pink-500">
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Graphic designer passionate about art, yoga, and sustainable living. Looking for like-minded partner.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Art</span>
-            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Yoga</span>
-            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Eco-friendly</span>
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-            <a href="https://wa.me/23052595505" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg font-medium transition">
-              <i class="fab fa-whatsapp mr-1"></i> Chat
-            </a>
-            <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition">
-              <i class="fas fa-heart mr-1"></i> Match
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Profile Card 4 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Profile">
-          <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            <i class="fas fa-check-circle mr-1"></i> Verified
-          </div>
-        </div>
-        <div class="p-5">
-          <div class="flex justify-between items-start mb-3">
-            <div>
-              <h3 class="text-xl font-bold">David, 35</h3>
-              <p class="text-gray-500">London, UK</p>
-            </div>
-            <div class="text-pink-500">
-              <i class="fas fa-globe"></i>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">International lawyer visiting Mauritius frequently. Enjoys sailing, fine dining, and cultural events.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Sailing</span>
-            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Fine Dining</span>
-            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Travel</span>
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-            <a href="https://wa.me/23052595505" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg font-medium transition">
-              <i class="fab fa-whatsapp mr-1"></i> Chat
-            </a>
-            <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition">
-              <i class="fas fa-heart mr-1"></i> Match
-            </button>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="text-center mt-12">
-      <button class="bg-white hover:bg-gray-100 text-pink-600 border border-pink-600 px-8 py-3 rounded-full font-semibold text-lg transition duration-300">
-        <i class="fas fa-users mr-2"></i> View All 10,000+ Profiles
-      </button>
-    </div>
-  </section>
+</header>
 
-  <!-- Random Match -->
-  <section class="container mx-auto px-4 py-12">
-    <div class="gradient-bg rounded-3xl p-8 md:p-12 text-white text-center">
-      <h2 class="text-3xl font-bold mb-4 playfair">🎲 Feeling Adventurous?</h2>
-      <p class="text-xl mb-8 opacity-90">Let love surprise you with our random match feature!</p>
-      <button class="bg-white hover:bg-gray-100 text-pink-600 px-10 py-4 rounded-full font-bold text-xl transition duration-300 shadow-lg">
-        <i class="fas fa-random mr-2"></i> Find Random Match
-      </button>
-      <p class="mt-6 opacity-80">Discover someone completely unexpected - it might be the best decision you make!</p>
-    </div>
-  </section>
 
-  <!-- Sponsor Section -->
-  <section id="sponsors" class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-2 playfair text-center">Our Trusted Sponsors</h2>
-    <p class="text-center text-gray-600 mb-12">Proudly supported by leading brands in Mauritius and beyond</p>
-    
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-      <div class="bg-white rounded-2xl p-6 flex items-center justify-center shadow-md hover:shadow-lg transition">
-        <img src="images/iconn.jpg">
-      </div>
-      <div class="bg-white rounded-2xl p-6 flex items-center justify-center shadow-md hover:shadow-lg transition">
-        <img src="images/iconnn.jpg">
-      </div>
-      <div class="bg-white rounded-2xl p-6 flex items-center justify-center shadow-md hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="h-12 object-contain" alt="Mauritius Bank">
-      </div>
-      <div class="bg-white rounded-2xl p-6 flex items-center justify-center shadow-md hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="h-12 object-contain" alt="Blue Ocean">
-      </div>
-      <div class="bg-white rounded-2xl p-6 flex items-center justify-center shadow-md hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="h-12 object-contain" alt="Island Jewel">
-      </div>
-    </div>
-    
-    <div class="text-center mt-12">
-      <p class="text-gray-600">Want to become a sponsor? <a href="https://wa.me/23059237053" target="_blank" class="text-pink-600 font-semibold hover:underline">Contact us</a></p>
-    </div>
-  </section>
+<div class="container">
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8">
-        <div>
-          <div class="flex items-center space-x-3 mb-6">
-            <div class="text-3xl">💖</div>
-            <div>
-              <h3 class="text-2xl font-bold playfair">Liaison</h3>
-              <p class="text-sm opacity-80">Dating App</p>
-            </div>
-          </div>
-          <p class="opacity-80">Connecting hearts in Mauritius and around the world since 2023.</p>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-          <ul class="space-y-3 opacity-80">
-            <li><a href="#register" class="hover:text-pink-300 transition">Register</a></li>
-            <li><a href="#explore" class="hover:text-pink-300 transition">Browse Profiles</a></li>
-            <li><a href="#" class="hover:text-pink-300 transition">Safety Guidelines</a></li>
-            <li><a href="#" class="hover:text-pink-300 transition">Success Stories</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-6">Legal</h4>
-          <ul class="space-y-3 opacity-80">
-            <li><a href="#" class="hover:text-pink-300 transition">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-pink-300 transition">Terms of Service</a></li>
-            <li><a href="#" class="hover:text-pink-300 transition">Cookie Policy</a></li>
-            <li><a href="#" class="hover:text-pink-300 transition">Community Guidelines</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-6">Contact Us</h4>
-          <div class="space-y-4">
-            <div class="flex items-center">
-              <i class="fab fa-whatsapp text-green-400 mr-3"></i>
-              <a href="https://wa.me/23059237053" target="_blank" class="hover:text-pink-300 transition">+230 5259 5505</a>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-envelope text-pink-400 mr-3"></i>
-              <a href="mailto:info@liaison-mauritius.com" class="hover:text-pink-300 transition">info@liaison-mauritius.com</a>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-map-marker-alt text-red-400 mr-3"></i>
-              <span>Port Louis, Mauritius</span>
-            </div>
-          </div>
-          
-          <div class="flex space-x-4 mt-6">
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center opacity-70">
-        <p>© 2023 Liaison Dating App – Mauritius. All rights reserved. | Built with <i class="fas fa-heart text-pink-500 mx-1"></i> for singles worldwide</p>
-      </div>
-    </div>
-  </footer>
+<!-- MAIN PROJECT -->
 
-  <!-- Floating Action Button -->
-  <a href="#register" class="fixed bottom-6 right-6 w-16 h-16 gradient-bg text-white rounded-full flex items-center justify-center shadow-2xl hover:shadow-xl transition-all duration-300 z-40">
-    <i class="fas fa-heart text-2xl"></i>
-  </a>
+<section class="section">
+
+<h2 data-en="The Port Chambly Alpha Asset – Rs 7 Million"
+data-fr="L’Actif Alpha de Port Chambly – 7 Millions de Roupies"></h2>
+
+<p data-en="Two-bedroom Mediterranean estate located in the iconic high-occupancy enclave of Port Chambly."
+data-fr="Propriété méditerranéenne de deux chambres située dans l’enclave très demandée de Port Chambly."></p>
+
+<div class="pricebox">
+
+<p data-en="Selling Price: Rs 7,000,000"
+data-fr="Prix de Vente: Rs 7 000 000"></p>
+
+<p data-en="Market price range: Rs 8M – Rs 12M"
+data-fr="Prix moyen du marché: Rs 8M – Rs 12M"></p>
+
+<p data-en="Maximum renovated units: up to Rs 15M"
+data-fr="Unités rénovées haut de gamme: jusqu’à Rs 15M"></p>
+
+<p data-en="Minimum listings: around Rs 6.9M"
+data-fr="Prix minimum observé: environ Rs 6.9M"></p>
+
+</div>
+
+</section>
+
+
+<!-- INVESTMENT DETAILS -->
+
+<section class="section">
+
+<h2 data-en="Why This Property Is a Strategic Investment"
+data-fr="Pourquoi Cet Investissement Est Stratégique"></h2>
+
+<ul>
+
+<li data-en="Scarcity factor: Port Chambly is fully developed and supply is limited."
+data-fr="Facteur de rareté : Port Chambly est entièrement développé et l’offre est limitée."></li>
+
+<li data-en="High demand from digital nomads and corporate relocations."
+data-fr="Forte demande des nomades digitaux et des expatriés professionnels."></li>
+
+<li data-en="Located between Port Louis financial district and the northern leisure belt."
+data-fr="Situé entre le quartier financier de Port Louis et la zone touristique du nord."></li>
+
+<li data-en="Strong rental potential around Rs 40,000 per month."
+data-fr="Potentiel locatif solide autour de Rs 40 000 par mois."></li>
+
+</ul>
+
+</section>
+
+
+<!-- PROPERTY DETAILS -->
+
+<section class="section">
+
+<h2 data-en="Property Specifications"
+data-fr="Caractéristiques de la Propriété"></h2>
+
+<ul>
+
+<li data-en="Size: 86m² – 90m²"
+data-fr="Surface: 86m² – 90m²"></li>
+
+<li data-en="Layout: Two-story townhouse"
+data-fr="Configuration: Maison sur deux étages"></li>
+
+<li data-en="Bedrooms: 2 ensuite bedrooms"
+data-fr="Chambres: 2 chambres avec salle de bain"></li>
+
+<li data-en="Features: Living room, kitchen, terrace or balcony"
+data-fr="Équipements: Salon, cuisine, terrasse ou balcon"></li>
+
+<li data-en="Amenities: pool, boat house, restaurant, 24/7 security"
+data-fr="Commodités: piscine, boat house, restaurant, sécurité 24/7"></li>
+
+</ul>
+
+</section>
+
+
+<!-- IMAGE GALLERY -->
+
+<section class="section">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="img1.jpg">
+<img src="img2.jpg">
+<img src="img3.jpg">
+<img src="img4.jpg">
+<img src="img5.jpg">
+<img src="img6.jpg">
+<img src="img7.jpg">
+<img src="img8.jpg">
+<img src="img9.jpg">
+<img src="img10.jpg">
+<img src="img11.jpg">
+<img src="img12.jpg">
+<img src="img13.jpg">
+<img src="img14.jpg">
+<img src="img15.jpg">
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE MAP -->
+
+<section class="section">
+
+<h2>Location</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=port%20chambly%20mauritius&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+
+<!-- EXCLUSIVE DEALS -->
+
+<section class="section">
+
+<h2 data-en="More Villas Coming Soon"
+data-fr="Plusieurs Villas Bientôt Disponibles"></h2>
+
+<p data-en="More investment villas will soon be available in Port Chambly."
+data-fr="D’autres villas d’investissement seront bientôt disponibles à Port Chambly."></p>
+
+<p data-en="The great deals will be available exclusively through Super Deals Mauritius Co Ltd."
+data-fr="Les meilleures offres seront disponibles exclusivement via Super Deals Mauritius Co Ltd."></p>
+
+<p data-en="Agent: Emamdin Wassim Realty."
+data-fr="Agent: Emamdin Wassim Realty."></p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section">
+
+<h2 data-en="Contact Our Investment Desk"
+data-fr="Contactez Notre Bureau d’Investissement"></h2>
+
+<p data-en="Private viewing and 5-year ROI projections available."
+data-fr="Visite privée et projection ROI sur 5 ans disponibles."></p>
+
+<p>Mobile / WhatsApp: +230 59237053</p>
+
+</section>
+
+</div>
+
+
+<a class="whatsapp" href="https://wa.me/23059237053">
+WhatsApp
+</a>
 
 </body>
 </html>
-
-
-
-
-
-
