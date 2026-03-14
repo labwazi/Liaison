@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Port Chambly Investment Property</title>
+<title>Port Chambly Investment Opportunity</title>
 
-<meta name="description" content="Port Chambly townhouse for sale Rs 7 million Mauritius. High ROI rental investment near Port Louis.">
-<meta name="keywords" content="Port Chambly property, Mauritius investment property, Port Louis rental property, townhouse Mauritius, Port Chambly duplex">
+<meta name="description" content="2 Bedroom townhouse for sale in Port Chambly Mauritius for Rs 7 million. High ROI rental investment near Port Louis.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -23,31 +23,38 @@ color:#333;
 header{
 background:linear-gradient(120deg,#0a4d68,#088395);
 color:white;
-padding:70px;
+padding:80px 20px;
 text-align:center;
-animation:fadein 2s;
 }
 
-h1{
+header h1{
 font-size:40px;
+margin-bottom:10px;
 }
 
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
-padding:40px 0;
+padding:50px 0;
 }
 
 .section{
-margin-bottom:60px;
-animation:slideup 1s;
+margin-bottom:70px;
+animation:fadeUp 1s ease;
+}
+
+.price-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:10px;
+gap:12px;
 }
 
 .gallery img{
@@ -55,65 +62,89 @@ width:100%;
 border-radius:10px;
 }
 
-.pricebox{
+.map{
+border-radius:10px;
+overflow:hidden;
+}
+
+form{
 background:white;
 padding:30px;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
-.whatsapp{
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:20px;
+border-radius:5px;
+border:1px solid #ddd;
+}
+
+button{
+background:#0a4d68;
+color:white;
+padding:14px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#06354a;
+}
+
+.whatsapp-float{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
 padding:15px 20px;
 border-radius:30px;
-font-weight:bold;
+font-weight:600;
 text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.langswitch{
-position:absolute;
-top:20px;
-right:20px;
+footer{
+background:#0a4d68;
+color:white;
+padding:30px;
+text-align:center;
 }
 
-button{
-padding:10px 15px;
-border:none;
-background:#fff;
-margin:5px;
-cursor:pointer;
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
 }
-
-iframe{
-width:100%;
-height:400px;
-border:0;
-border-radius:10px;
+to{
+opacity:1;
+transform:translateY(0);
 }
-
-@keyframes fadein{
-from{opacity:0}
-to{opacity:1}
-}
-
-@keyframes slideup{
-from{transform:translateY(40px);opacity:0}
-to{transform:translateY(0);opacity:1}
 }
 
 </style>
 
 <script>
 
-function setLang(lang){
+function sendWhatsApp(){
 
-document.querySelectorAll("[data-en]").forEach(el=>{
-el.innerText = el.getAttribute("data-"+lang)
-})
+var name=document.getElementById("name").value
+var phone=document.getElementById("phone").value
+var message=document.getElementById("message").value
+
+var url="https://wa.me/23059237053?text="
++"New Property Inquiry:%0A"
++"Name: "+name+"%0A"
++"Phone: "+phone+"%0A"
++"Message: "+message
+
+window.open(url,'_blank')
 
 }
 
@@ -125,110 +156,88 @@ el.innerText = el.getAttribute("data-"+lang)
 
 <header>
 
-<div class="langswitch">
-<button onclick="setLang('en')">English</button>
-<button onclick="setLang('fr')">Français</button>
-</div>
+<h1>Port Chambly Investment Opportunity</h1>
 
-<h1 data-en="Port Chambly Investment Opportunity"
-data-fr="Opportunité d’Investissement à Port Chambly">
-Port Chambly Investment Opportunity
-</h1>
-
-<p data-en="2 Bedroom Mediterranean Townhouse – Strategic ROI Property"
-data-fr="Maison de Ville Méditerranéenne 2 Chambres – Investissement à Haut Rendement">
-</p>
+<p>2 Bedroom Mediterranean Townhouse – High ROI Rental Asset</p>
 
 </header>
 
 
 <div class="container">
 
-<!-- MAIN PROJECT -->
 
 <section class="section">
 
-<h2 data-en="The Port Chambly Alpha Asset – Rs 7 Million"
-data-fr="L’Actif Alpha de Port Chambly – 7 Millions de Roupies"></h2>
+<h2>Investment Overview</h2>
 
-<p data-en="Two-bedroom Mediterranean estate located in the iconic high-occupancy enclave of Port Chambly."
-data-fr="Propriété méditerranéenne de deux chambres située dans l’enclave très demandée de Port Chambly."></p>
+<div class="price-box">
 
-<div class="pricebox">
+<p><strong>Property:</strong> 2 Bedroom Mediterranean Townhouse</p>
 
-<p data-en="Selling Price: Rs 7,000,000"
-data-fr="Prix de Vente: Rs 7 000 000"></p>
+<p><strong>Location:</strong> Port Chambly, Baie du Tombeau, Mauritius</p>
 
-<p data-en="Market price range: Rs 8M – Rs 12M"
-data-fr="Prix moyen du marché: Rs 8M – Rs 12M"></p>
+<p><strong>Selling Price:</strong> Rs 7,000,000</p>
 
-<p data-en="Maximum renovated units: up to Rs 15M"
-data-fr="Unités rénovées haut de gamme: jusqu’à Rs 15M"></p>
+<p><strong>Minimum Market Price:</strong> ~Rs 6.9M</p>
 
-<p data-en="Minimum listings: around Rs 6.9M"
-data-fr="Prix minimum observé: environ Rs 6.9M"></p>
+<p><strong>Average Market Price:</strong> Rs 8M – Rs 12M</p>
+
+<p><strong>High-End Renovated Units:</strong> Up to Rs 15M</p>
+
+<p><strong>Typical Rental:</strong> Around Rs 40,000/month</p>
 
 </div>
 
 </section>
 
 
-<!-- INVESTMENT DETAILS -->
-
 <section class="section">
 
-<h2 data-en="Why This Property Is a Strategic Investment"
-data-fr="Pourquoi Cet Investissement Est Stratégique"></h2>
+<h2>Why This Property Is Strategic</h2>
 
 <ul>
 
-<li data-en="Scarcity factor: Port Chambly is fully developed and supply is limited."
-data-fr="Facteur de rareté : Port Chambly est entièrement développé et l’offre est limitée."></li>
+<li>Port Chambly is fully developed with limited supply</li>
 
-<li data-en="High demand from digital nomads and corporate relocations."
-data-fr="Forte demande des nomades digitaux et des expatriés professionnels."></li>
+<li>High demand from expatriates and digital nomads</li>
 
-<li data-en="Located between Port Louis financial district and the northern leisure belt."
-data-fr="Situé entre le quartier financier de Port Louis et la zone touristique du nord."></li>
+<li>Located near Port Louis financial district</li>
 
-<li data-en="Strong rental potential around Rs 40,000 per month."
-data-fr="Potentiel locatif solide autour de Rs 40 000 par mois."></li>
+<li>Strong rental demand for short and long stays</li>
+
+<li>High ROI potential for investors</li>
 
 </ul>
 
 </section>
 
 
-<!-- PROPERTY DETAILS -->
-
 <section class="section">
 
-<h2 data-en="Property Specifications"
-data-fr="Caractéristiques de la Propriété"></h2>
+<h2>Property Details</h2>
 
 <ul>
 
-<li data-en="Size: 86m² – 90m²"
-data-fr="Surface: 86m² – 90m²"></li>
+<li>Size: 86m² – 90m²</li>
 
-<li data-en="Layout: Two-story townhouse"
-data-fr="Configuration: Maison sur deux étages"></li>
+<li>Layout: Two story townhouse</li>
 
-<li data-en="Bedrooms: 2 ensuite bedrooms"
-data-fr="Chambres: 2 chambres avec salle de bain"></li>
+<li>Bedrooms: 2 ensuite bedrooms</li>
 
-<li data-en="Features: Living room, kitchen, terrace or balcony"
-data-fr="Équipements: Salon, cuisine, terrasse ou balcon"></li>
+<li>Living room and dining area</li>
 
-<li data-en="Amenities: pool, boat house, restaurant, 24/7 security"
-data-fr="Commodités: piscine, boat house, restaurant, sécurité 24/7"></li>
+<li>Fully equipped kitchen</li>
+
+<li>Terrace or balcony</li>
+
+<li>Access to pool, boat house and restaurants</li>
+
+<li>24/7 security</li>
 
 </ul>
 
 </section>
 
-
-<!-- IMAGE GALLERY -->
 
 <section class="section">
 
@@ -257,58 +266,67 @@ data-fr="Commodités: piscine, boat house, restaurant, sécurité 24/7"></li>
 </section>
 
 
-<!-- GOOGLE MAP -->
-
 <section class="section">
 
 <h2>Location</h2>
 
+<div class="map">
+
 <iframe
+width="100%"
+height="400"
 src="https://maps.google.com/maps?q=port%20chambly%20mauritius&t=&z=13&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
+</div>
+
 </section>
 
-
-<!-- EXCLUSIVE DEALS -->
 
 <section class="section">
 
-<h2 data-en="More Villas Coming Soon"
-data-fr="Plusieurs Villas Bientôt Disponibles"></h2>
+<h2>Exclusive Listing</h2>
 
-<p data-en="More investment villas will soon be available in Port Chambly."
-data-fr="D’autres villas d’investissement seront bientôt disponibles à Port Chambly."></p>
+<p>This investment opportunity is marketed exclusively by <strong>Super Deals Mauritius Co Ltd</strong>.</p>
 
-<p data-en="The great deals will be available exclusively through Super Deals Mauritius Co Ltd."
-data-fr="Les meilleures offres seront disponibles exclusivement via Super Deals Mauritius Co Ltd."></p>
+<p>Agent: <strong>Emamdin Wassim Realty</strong></p>
 
-<p data-en="Agent: Emamdin Wassim Realty."
-data-fr="Agent: Emamdin Wassim Realty."></p>
+<p>More villas and investment opportunities will soon be available in Port Chambly exclusively through our network.</p>
 
 </section>
 
-
-<!-- CONTACT -->
 
 <section class="section">
 
-<h2 data-en="Contact Our Investment Desk"
-data-fr="Contactez Notre Bureau d’Investissement"></h2>
+<h2>Contact / Request Viewing</h2>
 
-<p data-en="Private viewing and 5-year ROI projections available."
-data-fr="Visite privée et projection ROI sur 5 ans disponibles."></p>
+<form onsubmit="sendWhatsApp(); return false;">
 
-<p>Mobile / WhatsApp: +230 59237053</p>
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<textarea id="message" placeholder="Your message"></textarea>
+
+<button type="submit">Send Inquiry via WhatsApp</button>
+
+</form>
 
 </section>
+
 
 </div>
 
 
-<a class="whatsapp" href="https://wa.me/23059237053">
-WhatsApp
-</a>
+<a class="whatsapp-float" href="https://wa.me/23059237053">WhatsApp</a>
+
+
+<footer>
+
+<p>© Super Deals Mauritius Co Ltd | Agent: Emamdin Wassim Realty</p>
+
+</footer>
+
 
 </body>
 </html>
